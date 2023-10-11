@@ -1,0 +1,11 @@
+{
+	"build": { "dockerfile": "Dockerfile" },
+	"runArgs": ["--gpus=all"],
+	"customizations": {
+		"vscode": { "extensions": [
+			"ms-python.python",
+			"ms-toolsai.jupyter"
+		] }
+	},
+	"postStartCommand": "pip install submodules/diff-gaussian-rasterization submodules/simple-knn &"
+}
